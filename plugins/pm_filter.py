@@ -893,6 +893,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
+                    InlineKeyboardButton(text="🏡", callback_data="start"),
+                    InlineKeyboardButton(text="🛡", callback_data="group_info"),
+                    InlineKeyboardButton(text="🛠", callback_data="help"),
+                    InlineKeyboardButton(text="👑", callback_data="owner"),
+                    InlineKeyboardButton(text="🖥", callback_data="about"),
+                ],[
                     InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton('🛡 𝖮𝗐𝗇𝖾𝗋', callback_data="owner_info"),
