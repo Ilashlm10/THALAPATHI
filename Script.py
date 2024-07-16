@@ -253,7 +253,7 @@ PIRO BOTS"""
 🗣️ Bᴏᴛ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ.
 📢 Bᴏᴛ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ."""
 
-   CREDIT_INFO = """
+    CREDIT_INFO = """
       <b>⍟───[ Cʀᴇᴅɪᴛꜱ ]───⍟</b>   
 𝖳𝗁𝖺𝗇𝗄 𝖳𝗈 : <a href=https://github.com/EvamariaTG>Eᴠᴀ ᴍᴀʀɪᴀ​</a>
 𝖢𝗈𝖽𝖾𝖽 𝖡𝗒 : <a href=https://t.me/movieman_22>тнє мαη</a>
