@@ -981,6 +981,29 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+    elif query.data == "group_info":
+        buttons = [[
+            InlineKeyboardButton("Bᴏᴛ Dᴀᴛᴀʙᴀꜱᴇ", url="https://t.me/Leomessi_10_19")
+                  ],[
+            InlineKeyboardButton("Gʀᴏᴜᴘ", url="https://t.me/LUCGROUP"),
+            InlineKeyboardButton("​Cʜᴀɴɴᴇʟ", url="t.me/LCULINKZ")
+                  ],[
+            InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/cinemaworld_123"),
+            InlineKeyboardButton("Uᴘᴅᴀᴛᴇꜱ", url="t.me/cinemaworld_update")
+                  ],[
+            InlineKeyboardButton("⇍Bᴀᴄᴋ", callback_data="start")
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GROUP_INFO.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('🧬 sᴜᴘᴘᴏʀᴛ', callback_data='group_info'),
